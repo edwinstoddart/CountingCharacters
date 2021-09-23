@@ -15,9 +15,7 @@ namespace CountingCharacters
                 if (CharacterCount.ContainsKey(c.ToString()))
                 {
                     CharacterCount[c.ToString()]++;
-                }
-                else
-                {
+                } else {
                     CharacterCount.Add(c.ToString(), 1);
                 } // End: if()
             } // End: foreach()

@@ -23,8 +23,7 @@ namespace CountingCharacters
                 {
                     Console.WriteLine("I'm sorry, you've entered an invalid character. Please try again:");
                     continue;
-                } else
-                {
+                } else {
                     break;
                 } // End: if()
             } // End: while()
