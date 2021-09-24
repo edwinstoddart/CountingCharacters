@@ -35,6 +35,8 @@ namespace CountingCharacters
             Utility.CountCharacters(Input, CharacterCount);
             Utility.PrintCount(CharacterCount);
 
+            /* -------------------------------------------------- */
+
             // Have the User select a file foz
             Console.WriteLine("Please Select a File:\n" +
                 "0: Only Letters\n" +
