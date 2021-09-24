@@ -8,22 +8,22 @@ namespace CountingCharacters
 {
     class Utility
     {
-        public static void CountCharacters(string Input, Dictionary<string, int> CharacterCount)
+        public static void CountCharacters(string Input, Dictionary<char, int> CharacterCount)
         {
             foreach (char c in Input.ToCharArray())
             {
-                if (CharacterCount.ContainsKey(c.ToString()))
+                if (CharacterCount.ContainsKey(c))
                 {
-                    CharacterCount[c.ToString()]++;
+                    CharacterCount[c]++;
                 } else {
-                    CharacterCount.Add(c.ToString(), 1);
+                    CharacterCount.Add(c, 1);
                 } // End: if()
             } // End: foreach()
         } // End: CountCharacters()
 
-        public static void PrintCount(Dictionary<string, int> CharacterCount)
+        public static void PrintCount(Dictionary<char, int> CharacterCount)
         {
-            foreach (KeyValuePair<string, int> character in CharacterCount)
+            foreach (KeyValuePair<char, int> character in CharacterCount)
             {
                 Console.WriteLine($"{character.Key}: {character.Value}");
             } // End foreach()
